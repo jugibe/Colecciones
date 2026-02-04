@@ -1,0 +1,25 @@
+package recorrerlistas;
+
+import java.util.ArrayList;
+
+public class Main {
+	public static void main(String[] args) {
+		ArrayList<Persona> listaPersonas=new ArrayList<Persona>();
+		listaPersonas.add(new Persona("Adrian", 23));
+		listaPersonas.add(new Persona("Carlos", 20));
+		listaPersonas.add(new Persona("Carlos", 45));
+		listaPersonas.add(new Persona("Evis", 23));
+		
+		for(Persona p: listaPersonas) {
+			p.setNombre(p.getNombre()+" X");
+			
+		}
+		
+
+       for(int i=0;i<listaPersonas.size();i++) {
+    	   listaPersonas.set(i, new Persona("David",29));
+       }
+
+	}
+
+}

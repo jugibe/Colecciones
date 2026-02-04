@@ -1,0 +1,33 @@
+package recorrerlistas;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Persona> listaPersonas = new ArrayList<Persona>();
+
+		listaPersonas.add(new Persona("Juan", 55));
+		listaPersonas.add(new Persona("Esther", 24));
+		listaPersonas.add(new Persona("Eder", 18));
+		listaPersonas.add(new Persona("Alexandru", 31));
+		listaPersonas.add(new Persona("Javier", 21));
+		listaPersonas.add(new Persona("Mariano", 24));
+		listaPersonas.add(new Persona("Javier", 21));
+		
+		
+		//recorrer por el indice
+		for(int i = 0; i <listaPersonas.size();i++) {
+			(listaPersonas.get(i)).setNombre("XX");
+			
+			System.out.println(listaPersonas.get(i));
+		}
+		
+
+
+
+	}
+
+}
