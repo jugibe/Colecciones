@@ -23,7 +23,7 @@ public class TiposDeMapas {
         hashMap.put("Luis", 25);
 
         // Si insertamos una clave repetida, se sobreescribe el valor
-        hashMap.put("Ana", 22);
+        hashMap.put("Ana", 110);
 
         System.out.println("HashMap:");
         System.out.println(hashMap);
