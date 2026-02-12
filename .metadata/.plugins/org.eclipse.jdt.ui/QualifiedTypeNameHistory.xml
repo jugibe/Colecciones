@@ -8,6 +8,9 @@
     <fullyQualifiedTypeName name="java.lang.System.Logger"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="ejerciciosMaps.Ejercicio4.ProductoSinStockException"/>
+    <fullyQualifiedTypeName name="ejerciciosMaps.Ejercicio4.ProductoInexistenteException"/>
 </qualifiedTypeNameHistroy>
