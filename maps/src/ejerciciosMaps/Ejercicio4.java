@@ -27,7 +27,7 @@ public class Ejercicio4 {
 		inventario.put("Manzanas", 6);
 		
 		try {
-			venderProductos("galletas",5);
+			venderProductos("galletas",6);
 		} catch (ProductoSinStockException | ProductoInexistenteException e) {
 			System.out.println(e.getMessage());
 		}
