@@ -13,4 +13,7 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="ejerciciosMaps.Ejercicio4.ProductoSinStockException"/>
     <fullyQualifiedTypeName name="ejerciciosMaps.Ejercicio4.ProductoInexistenteException"/>
+    <fullyQualifiedTypeName name="ejerciciosMaps.Ejercicio6.UsuarioExistenteException"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>
