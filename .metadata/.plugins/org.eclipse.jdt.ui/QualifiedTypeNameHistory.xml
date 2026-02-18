@@ -10,10 +10,11 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="ejerciciosMaps.Ejercicio4.ProductoSinStockException"/>
     <fullyQualifiedTypeName name="ejerciciosMaps.Ejercicio4.ProductoInexistenteException"/>
     <fullyQualifiedTypeName name="ejerciciosMaps.Ejercicio6.UsuarioExistenteException"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="olimpiadas.Medallero"/>
 </qualifiedTypeNameHistroy>

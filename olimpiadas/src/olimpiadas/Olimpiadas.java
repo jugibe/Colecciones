@@ -1,8 +1,12 @@
 package olimpiadas;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class Olimpiadas {
@@ -39,6 +43,7 @@ public class Olimpiadas {
 		Map<String, Medallero> ranking = new TreeMap<>();
 		inicializarRanking(ranking, paises);
 		llenarMedallero(ranking, resultados);
+		imprimirRankingOrdenado(ranking);
 		
 
 	}
@@ -79,7 +84,29 @@ public class Olimpiadas {
 		}
 	}
 	
-	public static void imprimirRankingOrdenado(Map<String, Medallero> ranking, Map<String, ArrayList<String>> resultados) {
+	public static void imprimirRankingOrdenado(Map<String, Medallero> ranking) {
+		/*
+		 * Forma 1.- extraer del mapa la collection con los valores
+		 * 
+		 */
+		Collection<Medallero> lista =  ranking.values();//obtengo la collection con los medalleros
+		
+		lista.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+		
+		/*
+		 * Forma 2.- ordenar la lista Map.Entry
+		 */
+		
+		List<Map.Entry<String, Medallero>> lista2 = new ArrayList<>(ranking.entrySet());
+		lista2.sort((a,b)->b.getValue().compareTo(a.getValue()));
+		for(Map.Entry<String, Medallero> mp:lista2){
+			System.out.println("Pais"+mp.getValue().getPais());
+			System.out.println("########################");
+			System.out.println("Oros"+mp.getValue().getOro());
+			System.out.println("Plata"+mp.getValue().getPlata());
+			System.out.println("Bronce"+mp.getValue().getBronce());
+			System.out.println("///////////////////////////////");
+		}
 		
 	}
 }
