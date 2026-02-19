@@ -23,15 +23,38 @@ public class EleccionesDAM {
 		//generar la estructura de cocientes
 		Map <String,ArrayList<Integer>>cocientes= generarCocientes(votos);
 		System.out.println(cocientes);
+		//estructura de datos para guardar el resultado definitivo de escaños
+		Map<String,Integer>resultadoEscanos=new HashMap<String, Integer>();
 		
-		String partido=sacarEscaño(cocientes);
-		System.out.println(partido);
-		System.out.println(cocientes);
+		for(int i=0; i<ESCANOS;i++) {
+			
+			String pe = sacarEscano(cocientes);
+			
+			if(!resultadoEscanos.containsKey(pe)) {
+				resultadoEscanos.put(pe, 0);
+			}
+			resultadoEscanos.put(pe, resultadoEscanos.get(pe)+1);
+		}
+		
+		mostrarEscanosOrdenados(resultadoEscanos);
+		
 		
 
 	}
+	private static void mostrarEscanosOrdenados(Map<String, Integer> resultadoEscanos) {
+		
+		//mostrar mapa ordenado por valor
+		
+		ArrayList<Map.Entry<String, Integer>>listaOrdenada= new ArrayList<Map.Entry<String,Integer>>(resultadoEscanos.entrySet());
+		//ordeno la lista
+		listaOrdenada.sort((b,a)->a.getValue().compareTo(b.getValue()));
+		for(Map.Entry<String, Integer> mp: listaOrdenada) {
+			System.out.println("Partido: "+mp.getKey()+" /Escaños: "+mp.getValue());
+		}
+		
+	}
 	//String , metodo que me devulve el partido al que le corresponde el escaño
-	private static String sacarEscaño(Map<String, ArrayList<Integer>> cocientes) {
+	private static String sacarEscano(Map<String, ArrayList<Integer>> cocientes) {
 
 		String partido="";
 		Integer numMayor=0;
