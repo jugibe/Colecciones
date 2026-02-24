@@ -29,7 +29,7 @@ public class MainPrueba {
 		Carta c2=b2.repartir();
 		System.out.println(c1+ "\n"+c2);
 		
-		if (c1.getValor().getNumero()>c2.getValor().getNumero()) {
+		if (c1.getNumero()>c2.getNumero()) {
 			System.out.println("Ganador "+ c1);
 		}else if (c1.getNumero()<c2.getNumero()) {
 			System.out.println("Ganador "+ c2);
